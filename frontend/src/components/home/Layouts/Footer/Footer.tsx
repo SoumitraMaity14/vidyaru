@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import {
   FacebookLogo,
-  TwitterLogo,
   InstagramLogo,
   LinkedinLogo,
   MapPin,
   Phone,
   EnvelopeSimple,
+  YoutubeLogoIcon,
 } from "@phosphor-icons/react";
 
 const Footer: React.FC = () => {
@@ -34,19 +34,19 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex gap-3 mt-5">
               <a
-                href="#"
+                href="https://www.facebook.com/share/1AofEpgb5H/"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#00b894] hover:-translate-y-1"
               >
                 <FacebookLogo size={20} weight="fill" />
               </a>
               <a
-                href="#"
+                href="https://youtube.com/@vidyaruofficial?si=EDbFz_tIZJQE5GHJ"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#00b894] hover:-translate-y-1"
               >
-                <TwitterLogo size={20} weight="fill" />
+                <YoutubeLogoIcon size={20} weight="fill" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/vidyaru.official?igsh=dWhkazEyMGVpNThq"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#00b894] hover:-translate-y-1"
               >
                 <InstagramLogo size={20} weight="fill" />
@@ -122,17 +122,17 @@ const Footer: React.FC = () => {
                 <MapPin size={16} weight="fill" /> 123 Education Street, NY
               </li>
               <li className="flex items-center gap-2">
-                <Phone size={16} weight="fill" /> +1 (555) 123-4567
+                <Phone size={16} weight="fill" /> 8535997609
               </li>
               <li className="flex items-center gap-2">
-                <EnvelopeSimple size={16} weight="fill" /> info@sageup.com
+                <EnvelopeSimple size={16} weight="fill" /> info@vidyaru.com
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-6 text-center text-gray-400 text-xs">
-          © 2025 SageUp. All rights reserved.
+          © 2025 Vidyaru. All rights reserved.
         </div>
       </div>
     </footer>
