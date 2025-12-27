@@ -31,7 +31,7 @@ export const Profiles = () => {
             const res = await axiosClient.get("/api/profiles");
             setProfiles(res.data.profiles || []);
         } catch (err) {
-            console.error("Error fetching profiles:", err);
+            
             setProfiles([]);
         } finally {
             setLoading(false);

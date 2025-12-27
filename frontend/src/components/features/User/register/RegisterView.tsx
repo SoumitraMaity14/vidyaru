@@ -90,16 +90,7 @@ export const RegisterView = () => {
 
         <label
           htmlFor={name}
-          className=" absolute left-4 top-3 text-gray-500 bg-white px-1 pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base
-peer-focus:top-0
-peer-focus:left-2
-peer-focus:-translate-y-1/2
-peer-focus:text-xs
-peer-focus:text-[#1B9B7D]
-peer-focus:font-bold
-peer-not-placeholder-shown:top-0
-peer-not-placeholder-shown:-translate-y-1/2
-peer-not-placeholder-shown:text-xs "
+          className=" absolute left-4 top-3 text-gray-500 bg-white px-1 pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:left-2 peer-focus:-translate-y-1/2 peer-focus:text-xs peer-focus:text-[#1B9B7D] peer-focus:font-bold peer-not-placeholder-shown:top-0 peer-not-placeholder-shown:-translate-y-1/2 peer-not-placeholder-shown:text-xs "
         >
           {label} {isRequired && "*"}
         </label>

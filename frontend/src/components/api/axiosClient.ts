@@ -9,16 +9,6 @@ const axiosClient = axios.create({
   },
 });
 
-// Optional: response interceptor for handling 401 globally
-axiosClient.interceptors.response.use(
-  response => response,
-  error => {
-    if (error.response?.status === 401) {
-      // e.g., redirect to login
-      window.location.href = '/admin/login';
-    }
-    return Promise.reject(error);
-  }
-);
+
 
 export default axiosClient;

@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
 import { useAppDispatch } from "../app/hook";
 import { setAuthState, logout } from "../features/User/login/loginSlice";
+import axiosClient from "./axiosClient";
 
 export const useCurrentUser = () => {
     const dispatch = useAppDispatch();
@@ -10,8 +10,8 @@ export const useCurrentUser = () => {
         queryKey: ["currentUser"],
         queryFn: async () => {
             try {
-                const res = await axios.get(
-                    `${import.meta.env.VITE_API_URL}/api/users/profile`,
+                const res = await axiosClient.get(
+                    "/api/users/profile",
                     { withCredentials: true }
                 );
 
