@@ -1,5 +1,5 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import {  AlignRightIcon, FileSearchIcon, MicrophoneIcon } from '@phosphor-icons/react'; // Using lucide-react for icons
+import {  AlignRightIcon,  MagnifyingGlass, MapPin, Microphone, } from '@phosphor-icons/react'; // Using lucide-react for icons
 
 export const Banner = () => {
   return (
@@ -10,25 +10,21 @@ export const Banner = () => {
         <h2 className="text-2xl font-bold mb-4">
           Search across <span className="text-blue-600">10,000+ Courses</span>
         </h2>
-        <div className="flex flex-col md:flex-row gap-0 max-w-4xl border rounded-lg overflow-hidden shadow-sm">
-          <div className="flex items-center px-4 bg-white border-b md:border-b-0 md:border-r min-w-[200px]">
-            <FileSearchIcon size={18} className="text-gray-400 mr-2" />
-            <input type="text" placeholder="Mumbai" className="py-3 outline-none w-full" />
-          </div>
-          <div className="flex items-center px-4 bg-white flex-grow relative">
-            <input 
-              type="text" 
-              placeholder="Search for Teachers, Courses or Coaching..." 
-              className="py-3 outline-none w-full" 
-            />
-            <div className="flex items-center gap-3">
-              <MicrophoneIcon size={20} className="text-blue-500 cursor-pointer" />
-              <button className="bg-orange-500 p-2 rounded text-white">
-                <FileSearchIcon size={20} />
-              </button>
-            </div>
-          </div>
-        </div>
+        <div className="flex flex-col md:flex-row max-w-4xl border border-[#1b9b7d] rounded-lg overflow-hidden shadow-sm bg-white">
+                           <div className="flex items-center px-4 py-3  md:border-b-0 md:border-r min-w-[180px]">
+                               <MapPin size={20} className="text-[#013f63] mr-2" />
+                               <input type="text" placeholder="Location" className="outline-none w-full text-sm" />
+                           </div>
+                           <div className="flex items-center px-4 py-3 flex-grow relative">
+                               <input type="text" placeholder="Search for Teachers, Coaching..." className="outline-none w-full text-sm" />
+                               <div className="flex items-center gap-3">
+                                   <Microphone size={20} className="text-[#013f63] cursor-pointer" />
+                                   <button className="bg-[#1b9b7d] p-2 rounded text-white transition">
+                                       <MagnifyingGlass size={20} weight="bold" />
+                                   </button>
+                               </div>
+                           </div>
+                       </div>
       </div>
 
       {/* 2. MAIN LAYOUT GRID */}
